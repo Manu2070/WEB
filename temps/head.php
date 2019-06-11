@@ -21,6 +21,15 @@
 	echo '<img src="images/apple-logo.png" alt="AWOnline" />';
 	echo '</div>';
 
+     <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div> 
+
 	
 
 	echo '<div class="topnav">';
