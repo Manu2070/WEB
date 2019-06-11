@@ -35,7 +35,7 @@
 	echo '<a class="active" style="float:right" href="login.php">Login</a>';
 	echo '<a class="active" style="float:right" href="register.php">Register</a>';
 	} else {
-	echo '<div style="float:right" class="dropdown">';
+	echo '<div class="dropdown">';
 	
 	echo '<button class="dropbtn">Dropdown 
       <i class="fa fa-caret-down"></i>
@@ -43,9 +43,9 @@
 	
 	echo '<div  class="dropdown-content">';
 	
-	echo '<a href="ccp.php">CCP</a>';
+	echo '<a style="color:white" href="ccp.php">CCP</a>';
 	
-	echo '<a href="logout.php">Logout</a>';
+	echo '<a style="color:red" href="logout.php">Logout</a>';
 	
 	echo '</div>';
 	echo '</div>';
