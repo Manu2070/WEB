@@ -38,3 +38,7 @@ Passwort wiederholen:<br>
 echo "Hallo User: ".$userid;
 echo " Hallo User: ".$name;
 ?>
+
+
+
+http://4haus.de/tips/phpmenu.html

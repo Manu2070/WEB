@@ -15,7 +15,9 @@ if(isset($_GET['login'])) {
     if ($user !== false && password_verify($passwort, $user['passwort'])) {
         $_SESSION['userid'] = $user['id'];
 		$_SESSION['name'] = $user['username'];
-        die('Login erfolgreich. Weiter zu <a href="cpp.php">internen Bereich</a>');
+        //die('Login erfolgreich. Weiter zu <a href="ccp.php">internen Bereich</a>');
+		echo "<h1><font color='#FF0000'>Login erfolgreich</font></h1>";
+		echo '<meta http-equiv="refresh" content="2; URL=ccp.php">';
     } else {
         $errorMessage = "Benutzer oder Passwort war ungültig<br>";
     }

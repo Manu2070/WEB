@@ -1,21 +1,9 @@
 <?php 
 include ("user/login.php");
-include ("user/users.php");
+include ("user/users.php"); //Set to Private for Login
 include ("temps/head.php");
 ?>
 <body>
-<div class="awo">
-<img src="images/apple-logo.png" alt="AWOnline" />
-</div>
-
-<div class="topnav">
-  <a href="index.php">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a class="active" href="ccp.php">CCP</a>
-  <a class="active" style="float:right" href="Login">Login</a>
-  <a class="active" style="float:right" href="Login">Register</a>
-</div> 
 
 <!-- <div class="dropdown">
   <button class="dropbtn">Dropdown</button>
