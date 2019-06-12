@@ -22,18 +22,18 @@
 
 	echo '<div class="navbar">';
 	
-	echo '<a href="index.php">Home</a>';
+	echo '<a href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>';
 	
-	echo '<a href="#news">News</a>';
+	echo '<a href="#news"><i class="fa fa-newspaper-o"></i> News</a>';
 	
-	echo '<a href="#contact">Contact</a>';
+	echo '<a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>';
 	
 	
 	
 	
 	if(!isset($_SESSION['userid'])) {
-	echo '<a class="active" style="float:right" href="login.php">Login</a>';
-	echo '<a class="active" style="float:right" href="register.php">Register</a>';
+	echo '<a class="active" style="float:right" href="login.php"><i class="fa fa-sign-in"></i> Login</a>';
+	echo '<a class="active" style="float:right" href="register.php"><i class="fa fa-fw fa-user"></i> Register</a>';
 	} else {
 	echo '<div class="dropdown">';
 	
@@ -45,7 +45,7 @@
 	
 	echo '<a style="color:white" href="ccp.php">CCP</a>';
 	
-	echo '<a style="color:red" href="logout.php">Logout</a>';
+	echo '<a style="color:red" href="logout.php">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>';
 	
 	echo '</div>';
 	echo '</div>';

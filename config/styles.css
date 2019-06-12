@@ -9,13 +9,57 @@ body {
 
 /*Bilder Logo*/
 .awo {
-  float: left
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 0%;
 }
 
+/*Body_Menu*/
+.body-menu {
+    color: black;
+    background: gray;
+    width: 85%;
+    margin-top: 10px;
+    margin-right: auto; /* Abstand rechts */
+    margin-bottom: 10px;
+    margin-left: auto; /* Abstand links */
+}
+
+.body-menu h1 {
+color: white;
+text-transform: uppercase;
+font-weight: 500;
+margin-right: auto;
+margin-left: auto;
+text-align: center;
+}
+
+/*Leftbar*/
+.icon-bar {
+float: left;
+width: 45px;
+background-color: #555;
+}
+
+.icon-bar a {
+ display: block;
+text-align: center;
+padding: 5px;
+transition: all 0.3s ease;
+color: white;
+font-size: 36px;
+}
+
+.icon-bar a:hover {
+background-color: #000;
+}
+
+.active {
+background-color: #4CAF50;
+}
+
+/*Topbar*/
 .navbar {
   overflow: hidden;
   background-color: #333;

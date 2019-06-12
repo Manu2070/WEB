@@ -5,22 +5,27 @@ include ("temps/head.php");
 ?>
 <body>
 
-<!-- <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div> 
--->
+<form class="body-menu">
+<h1><font color='#FF0000'><p>User Info..</p></font></h1>
+ <div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+  <a href="#"><i class="fa fa-search"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+</div>
+</form>	
 
-<form class="box" action="?login=1" method="post">
+<form class="box">
   <h1><font color='#FF0000'><p>User Info..</p></font></h1>
+
+
 <?php
 	echo "<font color='#FF0000'>Hallo User: </font>".$name;
 	echo "<br><font color='#FF0000'>UserID: </font>".$userid;
 ?>
+
+
 </form>	
 </body>
 </html>
