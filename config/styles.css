@@ -17,8 +17,7 @@ body {
 
 /*Body_Menu*/
 .body-menu {
-    color: black;
-    background: gray;
+    color: white;
     width: 85%;
     margin-top: 10px;
     margin-right: auto; /* Abstand rechts */
@@ -26,43 +25,58 @@ body {
     margin-left: auto; /* Abstand links */
 }
 
-.body-menu h1 {
-color: white;
-text-transform: uppercase;
-font-weight: 500;
-margin-right: auto;
-margin-left: auto;
-text-align: center;
+    .body-menu h1 {
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+.box2 {
+    width: 100px;
+    padding: 100px;
+    position: absolute;
+    top: 35%;
+    left: 21%;
+    transform: translate(-50%,-50%);
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #2ecc71;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
 }
 
-/*Leftbar*/
+/* The sidebar menu */
 .icon-bar {
-float: left;
-width: 45px;
-background-color: #555;
+    width: 60px;
+    background-color: none;
 }
 
-.icon-bar a {
- display: block;
-text-align: center;
-padding: 5px;
-transition: all 0.3s ease;
-color: white;
-font-size: 36px;
-}
+    .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 32px;
+    }
 
-.icon-bar a:hover {
-background-color: #000;
-}
+        .icon-bar a:hover {
+            background-color: #000;
+        }
 
 .active {
-background-color: #4CAF50;
+    background-color: none;
 }
 
 /*Topbar*/
 .navbar {
-  overflow: hidden;
-  background-color: #333;
+    overflow: hidden;
+    background-color: #333;
 }
 
 .navbar a {
@@ -124,6 +138,50 @@ background-color: #4CAF50;
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/*Dropdownmenu box*/
+.dropdown1 {
+    float: left;
+    overflow: hidden;
+}
+
+    .dropdown1 .dropbtn1 {
+        font-size: 32px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: none;
+    color: white;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content1 a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content1 a:hover {
+            background-color: none;
+        }
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
 }
 
 /* Change the Login Register Box */

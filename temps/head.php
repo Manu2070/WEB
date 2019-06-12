@@ -1,10 +1,6 @@
 <!doctype html>
 <head>
 <?php 
-
-	$aktiv	= 'class="active"';
-
-	
 	echo '<html lang="de">';
     echo '<Title>AWOnline</Title>';
 	echo '<meta charset=utf-8>';
