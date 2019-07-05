@@ -14,6 +14,7 @@ if(isset($_GET['login'])) {
     //Überprüfung des Passworts
     if ($user !== false && password_verify($passwort, $user['passwort'])) {
         $_SESSION['userid'] = $user['id'];
+		$_SESSION['mod'] = $user['mod'];
 		$_SESSION['name'] = $user['username'];
         //die('Login erfolgreich. Weiter zu <a href="ccp.php">internen Bereich</a>');
 		echo "<h1><font color='#FF0000'>Login erfolgreich</font></h1>";

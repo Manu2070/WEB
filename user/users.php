@@ -6,6 +6,7 @@ if(!isset($_SESSION['userid'])) {
  
 //Abfrage der Nutzer ID vom Login
 $userid = $_SESSION['userid'];
+$mod = $_SESSION['mod'];
 $name = $_SESSION['name'];
 
 ?>

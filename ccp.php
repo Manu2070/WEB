@@ -28,6 +28,7 @@ include ("temps/head.php");
 <?php
 	echo "<font color='#FF0000'>Hallo User: </font>".$name;
 	echo "<br><font color='#FF0000'>UserID: </font>".$userid;
+	echo "<br><font color='#FF0000'>mod: </font>".$mod;
 ?>
 
 
