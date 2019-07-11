@@ -14,7 +14,7 @@
 
 
 	echo '<div class="awo">';
-	echo '<img src="favicon64.png" alt="AWOnline" />';
+	echo '<center><img src="favicon64.png" alt="AWOnline" height="64" width="64"></a></center>';
 	echo '</div>';
 
 
@@ -29,6 +29,8 @@
 		 <?php
 	}
 	?>
+	<a href="ts3server://awonline.org?port=9987"><i class="fa fa-ticket"></i>Teamspeak3</a>
+	
 	
 	
 	<?php	
@@ -36,15 +38,15 @@
 	echo '<a class="active" style="float:right" href="login.php"><i class="fa fa-sign-in"></i> Login</a>';
 	echo '<a class="active" style="float:right" href="register.php"><i class="fa fa-fw fa-user"></i> Register</a>';
 	} else {
+	require ("user/users.php");
 	echo '<div class="dropdown">';
-	
-	echo '<button class="dropbtn">User Info 
-      <i class="fa fa-caret-down"></i>
-    </button>';
-	
-	echo '<div  class="dropdown-content">';
-	
 	?>
+	<button class="dropbtn"><a style="color:white">
+		<?php echo $name; ?>
+      <i class="fa fa-caret-down"></i></a>
+    </button>
+
+	<div  class="dropdown-content">
 
 	<?php
 		$res2=$dbcon->query("SELECT * FROM sub_menu");
