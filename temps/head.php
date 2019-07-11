@@ -29,10 +29,6 @@
 		 <?php
 	}
 	?>
-	<a href="ts3server://awonline.org?port=9987"><i class="fa fa-ticket"></i>Teamspeak3</a>
-	
-	
-	
 	<?php	
 	if(!isset($_SESSION['userid'])) {
 	echo '<a class="active" style="float:right" href="login.php"><i class="fa fa-sign-in"></i> Login</a>';
@@ -64,6 +60,10 @@
 	echo '</div>';
 	echo '</div>';
 	}
+	?>
+	<a style="float:right;" href="https://discord.gg/sx4hkw4"><i class="fa fa-first-order"></i>Discord</a>
+	<a style="float:right;" href="ts3server://awonline.org?port=9987"><i class="fa fa-ticket"></i>Teamspeak3</a>
+	<?php
 	echo '</div> ';
 ?>
   
