@@ -1,0 +1,5 @@
+Mod ID for MYSQL
+
+Admin		= 1
+Supporter	= 2
+Member		= 3

@@ -55,15 +55,21 @@
 	?>
 
 	<?php
+	if($mod == 1):
+		echo '<a style="color:blue" href="admin_menu.php">Admin</a>';
+	endif;
 	echo '<a style="color:red" href="logout.php">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>';
 	
 	echo '</div>';
 	echo '</div>';
 	}
-	?>
-	<a style="float:right;" href="https://discord.gg/sx4hkw4"><i class="fa fa-first-order"></i>Discord</a>
-	<a style="float:right;" href="ts3server://awonline.org?port=9987"><i class="fa fa-ticket"></i>Teamspeak3</a>
-	<?php
+	
+	if (!isset($_SESSION['userid'])):
+	elseif($mod > 0):
+	echo '<a style="float:right;" href="https://discord.gg/sx4hkw4"><i class="fa fa-first-order"></i>Discord</a>';
+	echo '<a style="float:right;" href="ts3server://awonline.org?port=9987"><i class="fa fa-ticket"></i>Teamspeak3</a>';
+	endif;
+	
 	echo '</div> ';
 ?>
   

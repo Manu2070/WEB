@@ -46,9 +46,18 @@ include ("user/users.php"); //Set to Private for Login
 						<h3>User Info</h3>
 			<ul>
 			<?php
-				echo "<font color='#FF0000'>ID: </font>".$userid;
-				echo "<br><font color='#FF0000'>User: </font>".$name;
-				echo "<br><font color='#FF0000'>Status: </font>".$mod;
+				echo "<font color='#b3b3b3'>ID: ".$userid;
+				echo "</font><font color='#b3b3b3'><br>User: </font><font color='#00cc0a'> ".$name;
+				echo "</font><font color='#b3b3b3'><br>Rank: </font>";
+				if($mod == 1):
+					echo "<font color='#FF0000'>Admin</font>";
+				elseif ($mod == 2):
+					echo "<font color='#001bff'>Supporter</font>";
+				elseif ($mod == 3):
+					echo "<font color='#05ff00'>Member</font>";
+				else: 
+					echo"<font color='#b3b3b3'>None User</font>";
+				endif;	
 			?>
 			</ul>
 			<ul>

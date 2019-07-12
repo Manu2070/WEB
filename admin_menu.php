@@ -2,6 +2,9 @@
 <?php 
 include ("user/login.php");
 include ("user/users.php"); //Set to Private for Login
+		if($mod != 1):
+			 die();
+		endif;
 ?>
 
 	<script type="text/javascript">
@@ -24,6 +27,11 @@ include ("user/users.php"); //Set to Private for Login
 
 		<main id="center" class="column">
 			<article>	
+				<center><h1>Mod ID for MYSQL</h1><p>
+				<font color='#FF0000'>Admin</font>		= 1<br />
+				<font color='#001bff'>Supporter</font>	= 2<br />
+				<font color='#05ff00'>Member</font>		= 3<br />
+				<font color='#b3b3b3'>None User</font>	= 0<br /></p></center>
 				<h1>Heading</h1>
 				<p><script>generateText(50)</script></p>
 			</article>
