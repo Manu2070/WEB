@@ -1,7 +1,11 @@
-<!DOCTYPE html>
-<!-- Template by html.am -->
 <html>
-<?php include ("user/login.php"); ?>
+<?php 
+include ("user/login.php");
+include ("user/users.php"); //Set to Private for Login
+		if($mod != 1):
+			 die();
+		endif;
+?>
 
 	<script type="text/javascript">
 		/* =============================
@@ -26,6 +30,9 @@
 			<article>
 
 				<h1>Heading</h1>
+				<div class="pre-spoiler">
+				<input name="button" type="button" onClick="if (this.parentNode.getElementsByTagName('div')[0].style.display != 'none') { this.parentNode.getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Aufklappen'; } else { this.parentNode.getElementsByTagName('div')[0].style.display = 'block'; this.value = 'Zuklappen';}" value="Buttontext">
+				<div class="spoiler" style="display: none;">Der Text, der sichtbar gemacht wird</div> 
 				<p><script>generateText(50)</script></p>
 
 			</article>
@@ -41,24 +48,13 @@
 			</script>
 		</nav>
 
-		<div id="right" class="column">
-			<h3>Left heading</h3>
+		<nav id="right" class="column">
+			<h3>Download</h3>
 			<ul>
 				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">Link 4</a></li>
-				<li><a href="#">Link 5</a></li>
+
 			</ul>
-				<h3>Left heading</h3>
-			<ul>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">Link 4</a></li>
-				<li><a href="#">Link 5</a></li>
-			</ul>
-		</div>
+		</nav>
 
 	</div>
 

@@ -68,8 +68,9 @@
 	elseif($mod > 0):
 	echo '<a style="float:right;" href="https://discord.gg/sx4hkw4"><i class="fa fa-first-order"></i>Discord</a>';
 	echo '<a style="float:right;" href="ts3server://awonline.org?port=9987"><i class="fa fa-ticket"></i>Teamspeak3</a>';
-	endif;
-	
+	echo '<a href="linux_server.php"><i class="fa fa-linux"></i>Linux</a>';
+	echo '<a href="windows_server.php"><i class="fa fa-windows"></i>Windows</a>';
+	endif;	
 	echo '</div> ';
 ?>
   

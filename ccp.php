@@ -4,7 +4,6 @@ include ("user/users.php"); //Set to Private for Login
 ?>
 <html>
 
-
 	<script type="text/javascript">
 		/* =============================
 		This script generates sample text for the body content.
